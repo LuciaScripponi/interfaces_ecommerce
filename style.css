@@ -42,6 +42,15 @@ a{
 margin-left: 60%;
 }
 
+.btn-detalle-factura{
+padding: 5px 10px;
+background-color: aliceblue;
+}
+
+.historial-facturas{
+    margin-top: -100px;
+}
+
 p{
     color: #555;
 }
