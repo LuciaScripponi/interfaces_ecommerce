@@ -35,6 +35,12 @@ a{
 .btn btn-success{
     color: green;
 }
+/*
+------------------PAGINA FACTURACION-------------------------
+*/
+.div-info-factura{
+margin-left: 60%;
+}
 
 p{
     color: #555;

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturacion | RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo" width="240px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Pedidos</a></li>
+                    <li><a href="products.html">Facturación</a></li>
+                    <li><a href="account.html">Mi perfil</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/user-2.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+    <!-- Cart items details -->
+    <div class="small-container cart-page">
+        <div class="cart-info">
+            <div>
+                <p> Factura Nª: 87495</p>
+                <p> Cliente: Lucía Scripponi</p>
+                <p> Domicilio: Godoy Cruz 986</p>
+                <p> Tel.: +54 261-547820</p>
+                <p> Email: jkf@gmail.com</p>
+                <p> Fecha: 25-03-2022</p>
+            </div>
+
+            <div class="div-info-factura">
+                <a href="index.html" style="justify-content: center;"><img src="images/logo.png" alt="logo"
+                        width="240px"></a>
+                <div>
+                    <p> EL BUEN SABOR</p>
+                    <p> CUIL: 30-547864123-2</p>
+                    <p> Domicilio: Av. España 348</p>
+                    <p> www.el-buen-sabor.com</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h3>Detalle de factura</h3>
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Hamburguesa especial XL</h4>
+                </td>
+                <td>
+                    <h4>$1800</h4>
+                </td>
+                <td>
+                    <h4>1</h4>
+                </td>
+                <td>
+                    <h4>$1800</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Papas fritas con salsa picante</h4>
+                </td>
+                <td>
+                    <h4>$500</h4>
+                </td>
+                <td>
+                    <h4>2</h4>
+                </td>
+                <td>
+                    <h4>$1000</h4>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Coca Cola 2 Lt</h4>
+                </td>
+                <td>
+                    <h4>$250</h4>
+                </td>
+                <td>
+                    <h4>1</h4>
+                </td>
+                <td>
+                    <h4>$250</h4>
+                </td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$3050.00</td>
+                </tr>
+                <tr>
+                    <td>I.V.A.</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>Descuentos</td>
+                    <td>$00.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$3110.00</td>
+                </tr>
+            </table>
+
+        </div>
+        <button type="button" class="btn btn-success" style="font-size: 20px;">Guardar PDF</button>
+        <button type="button" class="btn btn-success" style="font-size: 20px;">Enviar</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Descargar su App</h3>
+                    <p>Descarga la App para Android y Smartphones ios.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Nuestro propósito es hacer que el placer y los beneficios de comer sean accesibles para muchos de
+                        manera sostenible.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links útiles</h3>
+                    <ul>
+                        <li>Cupones</li>
+                        <li>Blog</li>
+                        <li>Política de devoluciones</li>
+                        <li>Únase a Afiliados</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Síganos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - El Buen Sabor®</p>
+        </div>
+    </div>
+
+    <!-- javascript -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
