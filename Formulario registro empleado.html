@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="div-registro-empleado">
+    <div class="div-registro-empleado1">
+      <div class="div-label-registro-empleado">
+        <label for="exampleInputnombre1" class="form-label-registro-empleado"><img src="images/employees.png"
+            width="140px">&nbsp;&nbsp;Registrar Empleado</label>
+      </div>
+    </div>
+    <div class="div-registro-empleado2">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputnombre1" class="form-label">Nombre y apellido</label>
+          <input type="text" class="form-control" id="exampleInputnombre1" aria-describedby="nombreHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputapellido1" class="form-label">Direccón</label>
+          <input type="text" class="form-control" id="exampleInputapellido1" aria-describedby="apellidoHelp">
+        </div>
+        <div class="mb-3">
+        </div>
+
+        <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Repetir Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+
+      </form>
+
+      <div class="div-registro-empleado3">
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">DNI</label>
+          <input type="Text" class="form-control" id="exampleInputPassword1">
+        </div>
+        <br>
+        <label class="form-label">Cargo</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Cocinero
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Cajero
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Delivery
+          </label>
+        </div>
+        <br>
+
+        <div class="mb-3">
+          <br>
+          <label for="exampleInputPassword1" class="form-label">Fecha de Nacimiento</label>
+          <input type="date">
+        </div>
+        <br>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Fechas Contratación</label>
+          <br>
+          <label for="exampleInputPassword1" class="form-label">Ingreso</label>
+          <input type="date">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Baja</label>
+          <input type="date">
+        </div>
+      </div>
+    </div>
+    <div class="div-registro-empleado4">
+      <button type="submit" class="btn btn-primary" id="registro-empleado">Registrar</button>
+    </div>
+  </div>
+</body>
+
+</html>
