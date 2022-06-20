@@ -31,6 +31,11 @@ a{
     text-decoration: none;
     color: #555;
 }
+
+.btn btn-success{
+    color: green;
+}
+
 p{
     color: #555;
 }
@@ -339,6 +344,10 @@ table{
 .cart-info{
     display: flex;
     flex-wrap: wrap;
+}
+.cart-info img{
+   width: 150px;
+   height: 100px;
 }
 th{
     text-align: left;
