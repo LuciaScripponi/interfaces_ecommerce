@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Insumos </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo" width="240px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Comandas</a></li>
+                    <li><a href="products.html">Stock</a></li>
+                    <li><a href="account.html">Mi perfil</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/user-4.jpg" width="50px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+<div class="historial-facturas">
+    <div class="small-container">
+        <div class="row row-2">
+            <h3></h3>
+            <select>
+                <option>Buscar por </option>
+                <option>Lácteos</option>
+                <option>Bebidas</option>
+                <option>Fiambres</option>
+                <option>Verduras</option> 
+                <option>Carnes</option>               
+            </select>
+        </div>
+
+    <!-- Cart items details -->
+    <div class="small-container cart-page">
+        <h3>Insumos</h3>
+        <table>
+            <tr>
+                <th>Nª</th>
+                <th>Nombre</th>
+                <th>Minimo</th>
+                <th>Máximo</th>
+                <th>Stock</th>
+                <th>Fecha</th>
+                <th>Vto</th>
+                <th>$Compra</th>
+                <th>$Venta</th>
+                <th>Estado</th>
+                <th>&nbsp;Editar</th>
+                <th>Eliminar</th>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <h4>001</h4>
+                </td>
+                <td>Harina 0000</td>
+                <td>15 kg</td>
+                <td>30 kg</td>
+                <td>22 kg</td>
+                <td>15-05-22</td>
+                <td>20-08-24</td>
+                <td>$450</td>
+                <td>$600</td>
+                <td><p  style="background-color: rgba(0, 128, 0, 0.754); padding: 5px; text-align: center; color: black;">OK</p></td>
+                <td>&nbsp; &nbsp;<button><i class="fa fa-pencil" style="font-size: 30px;"></i></button></td>
+                <td><button><i class="fa fa-trash" style="font-size: 30px;"></i></button></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <h4>002</h4>
+                </td>
+                <td>Roquefort</td>
+                <td>5 kg</td>
+                <td>15 kg</td>
+                <td>10 kg</td>
+                <td>18-10-21</td>
+                <td>10-10-23</td>
+                <td>$450</td>
+                <td>$600</td>
+                <td><p  style="background-color: yellow; padding: 5px; text-align: center; color: black;">Pedido</p></td>
+                <td>&nbsp; &nbsp;<button><i class="fa fa-pencil" style="font-size: 30px;"></i></button></td>
+                <td><button><i class="fa fa-trash" style="font-size: 30px;"></i></button></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <h4>003</h4>
+                </td>
+                <td>Paleta</td>
+                <td>10 kg</td>
+                <td>20 kg</td>
+                <td>8 kg</td>
+                <td>15-05-22</td>
+                <td>20-08-24</td>
+                <td>$450</td>
+                <td>$600</td>
+                <td><p  style="background-color: red; padding: 5px; text-align: center; color: black;">Falta</p></td>
+                <td>&nbsp; &nbsp;<button><i class="fa fa-pencil" style="font-size: 30px;"></i></button></td>
+                <td><button><i class="fa fa-trash" style="font-size: 30px;"></i></button></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <h4>004</h4>
+                </td>
+                <td>Queso cremoso</td>
+                <td>20 kg</td>
+                <td>40 kg</td>
+                <td>30 kg</td>
+                <td>18-12-21</td>
+                <td>20-08-24</td>
+                <td>$1200</td>
+                <td>$1600</td>
+                <td><p  style="background-color: rgba(0, 128, 0, 0.754); padding: 5px; text-align: center; color: black;">OK</p></td>
+                <td>&nbsp; &nbsp;<button><i class="fa fa-pencil" style="font-size: 30px;"></i></button></td>
+                <td><button><i class="fa fa-trash" style="font-size: 30px;"></i></button></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <h4>005</h4>
+                </td>
+                <td>Tomate</td>
+                <td>10 kg</td>
+                <td>30 kg</td>
+                <td>8 kg</td>
+                <td>15-05-22</td>
+                <td>20-08-24</td>
+                <td>$800</td>
+                <td>$950</td>
+                <td><p  style="background-color: red; padding: 5px; text-align: center; color: black;">Falta</p></td>
+                <td>&nbsp; &nbsp;<button><i class="fa fa-pencil" style="font-size: 30px;"></i></button></td>
+                <td><button><i class="fa fa-trash" style="font-size: 30px;"></i></button></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <h4>006</h4>
+                </td>
+                <td>Lechuga</td>
+                <td>12 kg</td>
+                <td>22 kg</td>
+                <td>13 kg</td>
+                <td>20-09-21</td>
+                <td>10-08-22</td>
+                <td>$800</td>
+                <td>$950</td>
+                <td><p  style="background-color: yellow; padding: 5px; text-align: center; color: black;">Pedido</p></td>
+                <td>&nbsp; &nbsp;<button><i class="fa fa-pencil" style="font-size: 30px;"></i></button></td>
+                <td><button><i class="fa fa-trash" style="font-size: 30px;"></i></button></td>
+            </tr>
+        </table>
+        
+        <button type="button" class="btn btn-success" style="font-size: 18px;">Volver</button>
+        <button type="button" class="btn btn-success" style="font-size: 18px;">Agregar insumo</button>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>&#8594;</span>
+        </div>
+        </div>
+        
+    </div>
+</div>
+ <!-- Footer -->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Descargar su App</h3>
+                <p>Descarga la App para Android y Smartphones ios.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Nuestro propósito es hacer que el placer y los beneficios de comer sean accesibles para muchos de manera sostenible.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Links útiles</h3>
+                <ul>
+                    <li>Cupones</li>
+                    <li>Blog</li>
+                    <li>Política de devoluciones</li>
+                    <li>Únase a Afiliados</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Síganos</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - El Buen Sabor®</p>
+    </div>
+</div>
+
+<!-- javascript -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+
+</html>

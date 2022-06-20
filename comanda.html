@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comanda</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="logo" width="240px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Comandas</a></li>
+                    <li><a href="products.html">Stock</a></li>
+                    <li><a href="account.html">Mi perfil</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/user-4.jpg" width="60px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- Cart items details -->
+    
+    <div class="small-container cart-page">
+        <h3>Comandas</h3>
+        <table>
+            <tr>
+                <th>Nª Pedido</th>
+                <th>Detalle</th>
+                <th>Tiempo estimado</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th style="text-align: center;">Estado</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>
+                    <div>
+                        <p>Lomo Especial XL</p>
+                        <small>Cantidad: 1</small>
+                        <br>
+                        <a href="">Editar</a> <a href="">Notas</a>
+                    </div>
+                </td>
+                <td>30 min</td>
+                <td>25-03-22</td>
+                <td>21:30:03</td>
+                <td><p  style="background-color: yellow; text-align: center; color: black;">En preparacion</p></td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>
+                    <div>
+                        <p>Empanadas de carne</p>
+                        <small>Cantidad: 3</small>
+                        <br>
+                        <a href="">Editar</a> <a href="">Notas</a>
+                    </div>
+                </td>
+                <td>45 min</td>
+                <td>18-06-22</td>
+                <td>22:00:00</td>
+                <td><p  style="background-color: yellow; text-align: center; color: black;">En preparacion</p></td>
+            </tr>
+            <tr>
+                <td>048</td>
+                <td>
+                    <div>
+                        <p>Pizza mozzarela</p>
+                        <small>Cantidad: 2</small>
+                        <br>
+                        <a href="">Editar</a> <a href="">Notas</a>
+                    </div>
+                </td>
+                <td>25 min</td>
+                <td>13-10-22</td>
+                <td>22:13:05</td>
+                <td><p  style="background-color: greenyellow; text-align: center; color: black;">Finalizado</p></td>
+            </tr>
+            <tr>
+                <td>013</td>
+                <td>
+                    <div>
+                        <p>Lomo Especial XL</p>
+                        <small>Cantidad: 1</small>
+                        <br>
+                        <a href="">Editar</a> <a href="">Notas</a>
+                    </div>
+                </td>
+                <td>20 min</td>
+                <td>13-10-22</td>
+                <td>22:15:01</td>
+                <td><p  style="background-color: orange; text-align: center; color: black;">Demorado</p></td>
+            </tr>
+           
+        </table>
+        <div class="total-price">
+           
+        </div>
+        <button type="button" class="btn btn-success" style="font-size: 20px;">Volver</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Descargar su App</h3>
+                    <p>Descarga la App para Android y Smartphones ios.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Nuestro propósito es hacer que el placer y los beneficios de comer sean accesibles para muchos de
+                        manera sostenible.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links útiles</h3>
+                    <ul>
+                        <li>Cupones</li>
+                        <li>Blog</li>
+                        <li>Política de devoluciones</li>
+                        <li>Únase a Afiliados</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Síganos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - El Buen Sabor®</p>
+        </div>
+    </div>
+
+    <!-- javascript -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
