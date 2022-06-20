@@ -458,6 +458,40 @@ form a{
     transition: transform 1s;
 }
 
+
+/* Formulario de registro*/
+.div-registro{
+    width: 25%;
+    border-radius: 10px;
+    padding: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    display: flex;
+    margin-left: 30%;
+    margin-top: 50px;
+
+}
+
+.form-label-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: x-large;
+    font-weight: 600;
+}
+#btn-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    color: #333;
+    background-color: #fff;
+    
+}
+#p-google{
+    display: flex;
+    justify-content: center;
+}
 /* Media query for menu */
 @media only screen and (max-width: 800px){
 
