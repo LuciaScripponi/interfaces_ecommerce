@@ -340,6 +340,10 @@ table{
     display: flex;
     flex-wrap: wrap;
 }
+.cart-info img{
+   width: 150px;
+   height: 100px;
+}
 th{
     text-align: left;
     padding: 5px;
